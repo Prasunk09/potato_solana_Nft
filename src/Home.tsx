@@ -19,6 +19,8 @@ import { AlertState } from './utils';
 import { Header } from './Header';
 import { MintButton } from './MintButton';
 import { GatewayProvider } from '@civic/solana-gateway-react';
+import img4 from './img4.png';
+import { Maximize } from '@material-ui/icons';
 
 const ConnectButton = styled(WalletDialogButton)`
   width: 100%;
@@ -171,11 +173,12 @@ const Home = (props: HomeProps) => {
   `
 
   return (
-    <Container style={{ marginTop: 100 }}>
+    <div className='App-header'>
+    <Container style={{  backgroundColor: '#282c34'  }}>
       <Container maxWidth="xs" style={{ position: 'relative' }}>
-        <TitanDogImage src="https://www.arweave.net/zYI7_IEjMT0D1uUI0oUwCpxlk0T6tHuI-ctUTm1Pmlg?ext=png" alt="titandog"/>
+        <TitanDogImage src={img4} alt="titandog"/>
         <Paper
-          style={{ padding: 24, background: 'linear-gradient(180deg, #af48ca 0%, #30dad7 100%)', borderRadius: 6 }}
+          style={{ padding: 24, background: 'linear-gradient(,  0%,  100%)', borderRadius: 6 }}
         >
           {!wallet.connected ? (
             <ConnectButton>Connect Wallet</ConnectButton>
@@ -233,6 +236,7 @@ const Home = (props: HomeProps) => {
         </Alert>
       </Snackbar>
     </Container>
+    </div>
   );
 };
 

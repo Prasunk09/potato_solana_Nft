@@ -2,7 +2,7 @@ import './App.css';
 import { useMemo } from 'react';
 import * as anchor from '@project-serum/anchor';
 import Home from './Home';
-import Navbar from './components/Navbar';
+import Navbar1 from './components/Navbar1';
 import Roadmap from './components/Roadmap';
 
 import { clusterApiUrl } from '@solana/web3.js';
@@ -22,6 +22,7 @@ import {
 import { WalletDialogProvider } from '@solana/wallet-adapter-material-ui';
 
 import { ThemeProvider, createTheme } from '@material-ui/core';
+//import Navbar1 from './components/Navbar1';
 
 const theme = createTheme({
   palette: {
@@ -71,7 +72,7 @@ const App = () => {
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect>
           <WalletDialogProvider>
-            <Navbar />
+            <Navbar1 />
             <Home
               candyMachineId={candyMachineId}
               connection={connection}
