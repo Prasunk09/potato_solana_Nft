@@ -27,7 +27,7 @@ const Roadmap = () => {
     <Card.Img variant="top" src={img5} />
     <Card.Body>
       <Card.Text>
-        copyrights @ 2022-Allright reserved by ixiono pte Itd.
+        copyrights @ 2022-Allright reserved.
       </Card.Text>
     </Card.Body>
   </Card>
